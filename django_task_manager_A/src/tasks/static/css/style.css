@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Navbar Styles */
+nav {
+    background: #007bff;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], 
+textarea, 
+select, 
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background-color: #c82333;
+}
+
+/* Footer Styles */
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
