@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Task
 from .forms import TaskForm
+from rest_framework import viewsets
+from .models import Task
+from .serializers import TaskSerializer
 
 # Create your views here.
 def task_list(request):
@@ -60,3 +63,11 @@ def task_delete(request, pk):
         return redirect('task_list')
     
     return render(request, 'tasks/task_confirm_delete.html', {'task': task})
+
+
+class TaskViewSet(viewsets.ModelViewSet):
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer
+
+def api_tasks_view(request):
+    return render(request, "tasks/api_tasks.html")
